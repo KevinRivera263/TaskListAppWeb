@@ -1,0 +1,32 @@
+.tasks-container {
+  padding: 2rem;
+}
+
+.task-input {
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.task-input button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  cursor: pointer;
+  padding: 0.3rem 0;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: gray;
+}

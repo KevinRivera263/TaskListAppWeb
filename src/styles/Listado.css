@@ -1,0 +1,18 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-email {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.contact-date {
+  font-size: 0.8rem;
+  color: #888;
+}
