@@ -6,24 +6,19 @@ import "./App.css";  // 👈 importa el CSS
 
 function App() {
   return (
-    <Router>
-      <div>
-        {/* Menú de navegación */}
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/tasks">Tasks</Link>
-          <Link to="/listado">Listado</Link>
-        </nav>
+    <Router basename="/TaskListAppWeb">
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/tasks">Tasks</Link> |{" "}
+        <Link to="/listado">Listado</Link>
+      </nav>
 
-        {/* Contenido de las páginas */}
-        <div className="page-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/tasks" element={<Tasks />} />
-            <Route path="/listado" element={<Listado />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/listado" element={<Listado />} />
+        <Route path="*" element={<Home />} /> {}
+      </Routes>
     </Router>
   );
 }
