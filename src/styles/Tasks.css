@@ -1,19 +1,30 @@
 .tasks-container {
+  max-width: 600px;
+  margin: 3rem auto;
   padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.task-input {
+.tasks-container h2 {
   margin-bottom: 1rem;
+  color: #333;
 }
 
-.task-input input {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.task-input button {
-  padding: 0.5rem 1rem;
+.tasks-container button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.tasks-container button:hover {
+  background: #1e7e34;
 }
 
 .task-list {
@@ -22,11 +33,20 @@
 }
 
 .task-list li {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 0.3rem 0;
+  transition: all 0.2s ease;
+}
+
+.task-list li:hover {
+  background: #e9ecef;
 }
 
 .task-list li.completed {
   text-decoration: line-through;
-  color: gray;
+  color: #6c757d;
+  background: #d4edda;
 }

@@ -4,7 +4,7 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div className="home-container">
-      <h1>Bienvenido a TaskListAppWeb</h1>
+      <h1>Bienvenido a TaskListAppWeb </h1>
       <p>Selecciona una opción:</p>
       <ul>
         <li>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./../styles/TaskModal.css";
+import "./../styles/taskModal.css";
 
 interface TaskModalProps {
   isOpen: boolean;
